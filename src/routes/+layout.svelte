@@ -2,12 +2,7 @@
 	import Header from './Header.svelte';
 	import './styles.css';
 </script>
-<!-- Add comment -->
-<!-- Add comment -->
-<!-- Add comment -->
-<!-- Add comment -->
-<!-- Add comment -->
-<!-- Add comment -->
+
 <div class="app">
 	<Header />
 
