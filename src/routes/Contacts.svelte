@@ -1,6 +1,4 @@
 <script>
-	import { base } from '$app/paths';
-	import { page } from '$app/stores';
 	import github from '$lib/images/icons/github-sign.png';
 	import tg from '$lib/images/icons/telegram.png';
     import hh_ru from '$lib/images/icons/hh_letter_icon_216445.png';
