@@ -70,9 +70,9 @@ async function ShowComic() {
 </div>
 
 <style>
-	.comic-body {
+	/* .comic-body {
 		background-color: #313131;
-	}
+	} */
 
 	.API-experience {
 		background-color: #313131;
@@ -86,7 +86,7 @@ async function ShowComic() {
 		padding-bottom: 15px;
 	}
 
-	.joke {
+	/* .joke {
 		color: white;
 	}
 
@@ -94,9 +94,9 @@ async function ShowComic() {
 		font-weight: 400;
 		font-size: 20px;
 		padding: 30px 0;
-	}
+	} */
 
-	.joke p {
+	/* .joke p {
 		font-weight: 300;
 		font-size: 15px;
 		padding-top: 15px;
@@ -110,12 +110,12 @@ async function ShowComic() {
 		font-size: 18px;
 		color: black;
 		transition: background-color 0.2s ease-in, top 0.2s ease-in;
-	}
-
+	} */
+/* 
 	.new_btn:hover,
 	.new_btn:focus {
 		background-color: #373737;
-	}
+	} */
 
 	.button-joke {
 		background-color: white;
