@@ -21,6 +21,12 @@ jobs:
           node-version: '16'
       - name: Install dependencies
         run: npm ci
+      - name: Check configurations
+        run: npm run check
+      - name: Format code
+        run: npm run format
+      - name: Linting
+        run: npm run lint
       - name: Build website
         run: npm run build
       - name: Deploy to GitHub Page
