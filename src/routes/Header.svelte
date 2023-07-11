@@ -2,6 +2,7 @@
 	import { base } from '$app/paths';
 	import { page } from '$app/stores';
 	import avatar from '$lib/images/header/ivan.png';
+	
 </script>
 
 <head>
@@ -13,6 +14,7 @@
 		referrerpolicy="no-referrer"
 	/>
 </head>
+
 
 <header class="header">
 	<div class="container">
@@ -30,7 +32,10 @@
 					<li class="nav-item" aria-current={$page.url.pathname === '/api' ? 'page' : undefined}>
 						<a class="nav-link" href="{base}/api"> API </a>
 					</li>
-					<li class="nav-item" aria-current={$page.url.pathname === '/projects' ? 'page' : undefined}>
+					<li
+						class="nav-item"
+						aria-current={$page.url.pathname === '/projects' ? 'page' : undefined}
+					>
 						<a class="nav-link" href="{base}/projects"> Projects </a>
 					</li>
 				</ul>
@@ -59,7 +64,6 @@
 		</div>
 	</div>
 </header>
-
 
 <style>
 	/* Header */

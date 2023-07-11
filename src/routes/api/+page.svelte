@@ -1,21 +1,23 @@
 <script lang="ts">
 	import moment from 'moment';
 
-	interface ComicData {
+	type ComicData = {
 		alt: string;
 		safe_title: string;
 		img: string;
 		day: number;
 		month: number;
 		year: number;
-	}
+	};
 
 	const email = 'i.golov@innopolis.university';
 	const param = new URLSearchParams();
 	param.append('email', email);
 
-	
-async function ShowComic() {
+	let comicData: ComicData = { alt: '', safe_title: '', img: '', day: 0, month: 0, year: 0 };
+	let dataInfo = '';
+
+	async function ShowComic() {
 		try {
 			const res = await fetch(`https://fwd.innopolis.university/api/hw2?${param}`);
 			const comicId = await res.json();
@@ -23,33 +25,18 @@ async function ShowComic() {
 			const res1 = await fetch(`https://fwd.innopolis.university/api/comic?id=${comicId}`);
 			const data: ComicData = await res1.json();
 
-			const { alt, safe_title, img, day, month, year } = data;
+			comicData.img = data.img;
+			comicData.alt = data.alt;
+			comicData.safe_title = data.safe_title;
+			const { day, month, year } = data;
 			const date = new Date(year, month, day);
-			const dateOfLoading = date.toLocaleDateString();
-			const timeAgo = moment(date).fromNow();
-
-			// const image = document.createElement('img') as HTMLImageElement;
-			// image.src = img;
-			// image.alt = alt;
-
-			// const titleElement = document.createElement('h2') as HTMLHeadingElement;
-			// titleElement.innerText = safe_title;
-
-			// const dateElement = document.createElement('p') as HTMLParagraphElement;
-			// dateElement.innerText = `Date of loading: ${dateOfLoading} (${timeAgo})`;
-
-			// const container = document.getElementById('comic-container') as HTMLElement;
-			// if (container != null) {
-			// 	container.appendChild(titleElement);
-			// 	container.appendChild(image);
-			// 	container.appendChild(dateElement);
-			// } else {
-			// 	console.log('Error, container undefined');
-			// }
+			let dateOfLoading = date.toLocaleDateString();
+			let timeAgo = moment(date).fromNow();
+			dataInfo = `Date of loading: ${dateOfLoading} (${timeAgo})`;
 		} catch (error) {
 			console.log('Error:', error);
 		}
-	};
+	}
 </script>
 
 <svelte:head>
@@ -64,15 +51,32 @@ async function ShowComic() {
 				<h2 class="title-1">Joke!!!</h2>
 			</div>
 
-			<button type="button" class="button-joke" id="button_API"> See the picture !!! </button>
+			<button on:click|preventDefault={ShowComic} type="button" class="button-joke">
+				See the picture !!!
+			</button>
+
+			<div class="comic">
+				<h1>{comicData.safe_title}</h1>
+				<img src={comicData.img} alt={comicData.alt} />
+				<p>{dataInfo}</p>
+			</div>
 		</div>
 	</section>
 </div>
 
 <style>
-	/* .comic-body {
-		background-color: #313131;
-	} */
+	.comic {
+		color: white;
+		font-size: 20px;
+		padding-top: 20px;
+	}
+
+	.comic h1 {
+		font-size: 30px;
+	}
+	.comic p {
+		padding-top: 10px;
+	}
 
 	.API-experience {
 		background-color: #313131;
@@ -85,37 +89,6 @@ async function ShowComic() {
 		color: white;
 		padding-bottom: 15px;
 	}
-
-	/* .joke {
-		color: white;
-	}
-
-	.joke h2 {
-		font-weight: 400;
-		font-size: 20px;
-		padding: 30px 0;
-	} */
-
-	/* .joke p {
-		font-weight: 300;
-		font-size: 15px;
-		padding-top: 15px;
-	}
-
-	.new_btn {
-		background-color: white;
-		display: inline-block;
-		border-radius: 30px;
-		padding: 7px 22px;
-		font-size: 18px;
-		color: black;
-		transition: background-color 0.2s ease-in, top 0.2s ease-in;
-	} */
-/* 
-	.new_btn:hover,
-	.new_btn:focus {
-		background-color: #373737;
-	} */
 
 	.button-joke {
 		background-color: white;
