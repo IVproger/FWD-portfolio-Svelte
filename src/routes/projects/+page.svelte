@@ -1,5 +1,5 @@
 <svelte:head>
-	<title>Projects</title>
+	<title>projects</title>
 	<meta name="description" content="" />
 </svelte:head>
 

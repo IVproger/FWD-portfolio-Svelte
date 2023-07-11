@@ -5,7 +5,7 @@
 </script>
 
 <svelte:head>
-	<title>Skills</title>
+	<title>skills</title>
 	<meta name="description" content="Page about personal skills" />
 </svelte:head>
 

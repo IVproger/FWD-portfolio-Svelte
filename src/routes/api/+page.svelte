@@ -53,7 +53,7 @@ async function ShowComic() {
 </script>
 
 <svelte:head>
-	<title>API</title>
+	<title>api</title>
 	<meta name="description" content="" />
 </svelte:head>
 

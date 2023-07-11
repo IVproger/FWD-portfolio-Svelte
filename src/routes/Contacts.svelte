@@ -29,7 +29,7 @@
 		</div>
 
 		<div class="contacts-button">
-			<a href="#!" class="btn"> Send message</a>
+			<a href=" " class="btn"> Send message</a>
 		</div>
 
 		<div class="contacts-socials">
