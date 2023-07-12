@@ -19,7 +19,7 @@
 
 	async function ShowComic() {
 		try {
-			const res = await fetch(`https://fwd.innopolis.university/api/hw2?${param}`);
+			const res = await fetch(`https://fwd.innopolis.app/api/hw2?${param}`);
 			const comicId = await res.json();
 
 			const res1 = await fetch(`https://fwd.innopolis.university/api/comic?id=${comicId}`);
