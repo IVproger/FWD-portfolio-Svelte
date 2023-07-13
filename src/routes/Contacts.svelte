@@ -1,8 +1,8 @@
 <script>
 	import github from '$lib/images/icons/github-sign.png';
 	import tg from '$lib/images/icons/telegram.png';
-    import hh_ru from '$lib/images/icons/hh_letter_icon_216445.png';
-    import email from '$lib/images/icons/email.png';
+	import hh_ru from '$lib/images/icons/hh_letter_icon_216445.png';
+	import email from '$lib/images/icons/email.png';
 </script>
 
 <head>
@@ -64,7 +64,7 @@
 	.contacts {
 		padding: 90px 0;
 		text-align: center;
-        background-color: #f1f1f1;
+		background-color: #f1f1f1;
 	}
 
 	.contacts-title {

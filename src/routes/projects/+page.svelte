@@ -1,7 +1,7 @@
 <script>
-	import project_1 from "$lib/images/projects/pr1.jpg";
-	import project_2 from "$lib/images/projects/pr2.jpg";
-	import project_3 from "$lib/images/projects/pr3.jpg";
+	import project_1 from '$lib/images/projects/pr1.jpg';
+	import project_2 from '$lib/images/projects/pr2.jpg';
+	import project_3 from '$lib/images/projects/pr3.jpg';
 </script>
 
 <svelte:head>

@@ -4,14 +4,9 @@
 	import './styles.css';
 </script>
 
-
-
-
-
-
 <div>
 	<Header />
-	
+
 	<main>
 		<slot />
 	</main>
@@ -20,6 +15,4 @@
 </div>
 
 <style>
-
-
 </style>

@@ -1,7 +1,7 @@
 <script>
-	import skill_1 from "$lib/images/icons/icon skill 1.svg";
-	import skill_2 from "$lib/images/icons/icon skill 2.svg";
-	import skill_3 from "$lib/images/icons/incon skill 3.svg";
+	import skill_1 from '$lib/images/icons/icon skill 1.svg';
+	import skill_2 from '$lib/images/icons/icon skill 2.svg';
+	import skill_3 from '$lib/images/icons/incon skill 3.svg';
 </script>
 
 <svelte:head>
@@ -23,7 +23,7 @@
 			</div>
 
 			<div class="skills-card">
-				<img class="skills-card-img"  src={skill_2} alt="skill 2" />
+				<img class="skills-card-img" src={skill_2} alt="skill 2" />
 				<h3 class="skills-card-title">Tech skills</h3>
 				<p>
 					I know the base of Java, C++, Python. I am also actively learning web development and

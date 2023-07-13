@@ -2,7 +2,6 @@
 	import { base } from '$app/paths';
 	import { page } from '$app/stores';
 	import avatar from '$lib/images/header/ivan.png';
-	
 </script>
 
 <head>
@@ -14,7 +13,6 @@
 		referrerpolicy="no-referrer"
 	/>
 </head>
-
 
 <header class="header">
 	<div class="container">
