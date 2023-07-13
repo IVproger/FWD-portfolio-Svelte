@@ -24,7 +24,7 @@
 </div>
 
 <style>
-	.comic {
+	/* .comic {
 		color: white;
 		font-size: 20px;
 		padding-top: 20px;
@@ -35,7 +35,7 @@
 	}
 	.comic p {
 		padding-top: 10px;
-	}
+	} */
 
 	.API-experience {
 		background-color: #313131;
