@@ -27,6 +27,7 @@ export async function load() {
 	const date = new Date(year, month, day);
 	const dateOfLoading = date.toLocaleDateString();
 	const timeAgo = moment(date).fromNow();
+	
 
 	return {
 		comic: {

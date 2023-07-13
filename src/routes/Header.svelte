@@ -1,5 +1,5 @@
 <script>
-	import { base } from '$app/paths';
+	// import { base } from '$app/paths';
 	import { page } from '$app/stores';
 	import avatar from '$lib/images/header/ivan.png';
 </script>
@@ -22,19 +22,19 @@
 			<nav id="nav" class="nav">
 				<ul class="nav-list">
 					<li class="nav-item" aria-current={$page.url.pathname === '/' ? 'page' : undefined}>
-						<a class="nav-link active" href="{base}/">Home</a>
+						<a class="nav-link active" href="/">Home</a>
 					</li>
 					<li class="nav-item" aria-current={$page.url.pathname === '/skills' ? 'page' : undefined}>
-						<a class="nav-link" href="{base}/skills"> Skills </a>
+						<a class="nav-link" href="/skills"> Skills </a>
 					</li>
 					<li class="nav-item" aria-current={$page.url.pathname === '/api' ? 'page' : undefined}>
-						<a class="nav-link" href="{base}/api"> API </a>
+						<a class="nav-link" href="/api"> API </a>
 					</li>
 					<li
 						class="nav-item"
 						aria-current={$page.url.pathname === '/projects' ? 'page' : undefined}
 					>
-						<a class="nav-link" href="{base}/projects"> Projects </a>
+						<a class="nav-link" href="/projects"> Projects </a>
 					</li>
 				</ul>
 			</nav>
