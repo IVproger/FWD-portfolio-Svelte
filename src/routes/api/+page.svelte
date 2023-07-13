@@ -1,5 +1,5 @@
 <script lang="ts">
-	export let data;
+	// export let data;
 	// console.log(data.comic);
 </script>
 
@@ -14,11 +14,11 @@
 				<h2 class="title-1">Joke!!!</h2>
 			</div>
 
-			<div class="comic">
+			<!-- <div class="comic">
 				<h1>{data.comic.safe_title}</h1>
 				<img src={data.comic.img} alt={data.comic.alt} />
 				<p>{data.comic.dataInfo}</p>
-			</div>
+			</div> -->
 		</div>
 	</section>
 </div>
