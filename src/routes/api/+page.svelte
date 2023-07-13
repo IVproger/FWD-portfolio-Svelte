@@ -4,9 +4,13 @@
 </script>
 
 <svelte:head>
-	<title>api</title>
+	<title>API</title>
 	<meta name="description" content="" />
+	<link rel="shortcut icon" type="image/jpg" href="" />
+	<meta name="author" content="Ivan Golov" />
+	<meta name="description" content=" " />
 </svelte:head>
+
 <div class="text-column">
 	<section class="API-experience">
 		<div class="container">

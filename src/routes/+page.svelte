@@ -1,7 +1,10 @@
 <script>
+	
 </script>
 
 <svelte:head>
 	<title>Home</title>
-	<meta name="description" content="Svelte demo app" />
+	<link rel="shortcut icon" type="image/jpg" href="" />
+	<meta name="author" content="Ivan Golov" />
+	<meta name="description" content=" " />
 </svelte:head>

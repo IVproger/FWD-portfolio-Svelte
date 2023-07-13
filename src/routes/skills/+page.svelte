@@ -5,8 +5,10 @@
 </script>
 
 <svelte:head>
-	<title>skills</title>
-	<meta name="description" content="Page about personal skills" />
+	<title>Skills</title>
+	<link rel="shortcut icon" type="image/jpg" href="" />
+	<meta name="author" content="Ivan Golov" />
+	<meta name="description" content=" " />
 </svelte:head>
 
 <div class="skills-title">
