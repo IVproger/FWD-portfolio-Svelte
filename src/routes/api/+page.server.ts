@@ -1,6 +1,6 @@
 import moment from 'moment';
 
-export const prerender = true;
+// export const prerender = true;
 
 export interface ComicData {
 	alt: string;
