@@ -1,14 +1,13 @@
 <script lang="ts">
 	export let data;
-	// console.log(data.comic);
+	import img from "$lib/images/icons/api.png"
 </script>
 
 <svelte:head>
 	<title>API</title>
-	<meta name="description" content="" />
-	<link rel="shortcut icon" type="image/jpg" href="" />
+	<link rel="shortcut icon" type="image/jpg" href={img}/>
 	<meta name="author" content="Ivan Golov" />
-	<meta name="description" content=" " />
+	<meta name="description" content="My experiense of interacting with API" />
 </svelte:head>
 
 <div class="text-column">
