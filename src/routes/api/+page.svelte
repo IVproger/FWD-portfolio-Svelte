@@ -1,11 +1,11 @@
 <script lang="ts">
 	export let data;
-	import img from "$lib/images/icons/api.png"
+	import img from '$lib/images/icons/api.png';
 </script>
 
 <svelte:head>
 	<title>API</title>
-	<link rel="shortcut icon" type="image/jpg" href={img}/>
+	<link rel="shortcut icon" type="image/jpg" href={img} />
 	<meta name="author" content="Ivan Golov" />
 	<meta name="description" content="My experiense of interacting with API" />
 </svelte:head>

@@ -2,13 +2,12 @@
 	import skill_1 from '$lib/images/icons/icon skill 1.svg';
 	import skill_2 from '$lib/images/icons/icon skill 2.svg';
 	import skill_3 from '$lib/images/icons/incon skill 3.svg';
-	import img from "$lib/images/icons/skills.png"
-
+	import img from '$lib/images/icons/skills.png';
 </script>
 
 <svelte:head>
 	<title>Skills</title>
-	<link rel="shortcut icon" type="image/png" href={img}/>
+	<link rel="shortcut icon" type="image/png" href={img} />
 	<meta name="author" content="Ivan Golov" />
 	<meta name="description" content="My hard and soft skills" />
 </svelte:head>
